@@ -1,0 +1,2 @@
+$ cd /usr/local/Cellar/hive/2.1.1/libexec/conf
+$ cp hive-default.xml.template hive-site.xml

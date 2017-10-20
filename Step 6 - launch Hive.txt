@@ -1,0 +1,6 @@
+run the schematool so that hive will use mysql
+
+./schematool -initSchema -dbType mysql 
+
+$hive
+hive > show tables;
