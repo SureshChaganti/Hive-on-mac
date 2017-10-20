@@ -1,0 +1,12 @@
+$ brew update
+$ brew install hadoop
+$ brew install hive
+$ brew install mysql
+
+Download the mysql connector 
+
+https://dev.mysql.com/downloads/connector/j/
+
+$ tar zxvf mysql-connector-java-5.1.44.tar.gz
+$ sudo cp mysql-connector-java-5.1.44/mysql-connector-java-5.1.44-bin.jar /usr/local/Cellar/hive/2.1.1/libexec/lib/
+

@@ -1,0 +1,7 @@
+start My sql with below command:
+  brew services start mysql
+$ mysql
+mysql> CREATE DATABASE metastore;
+mysql> USE metastore;
+mysql> CREATE USER 'hiveuser'@'localhost' IDENTIFIED BY 'password';
+mysql> GRANT SELECT,INSERT,UPDATE,DELETE,ALTER,CREATE, REFERENCES, INDEX ON metastore.* TO 'hiveuser'@'localhost';
