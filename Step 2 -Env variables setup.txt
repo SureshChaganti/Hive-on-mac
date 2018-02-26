@@ -1,4 +1,4 @@
-# ~/.bashrc
+vim ~/.bashrc
 export HADOOP_HOME=/usr/local/Cellar/hadoop/3.0.0   ## or latest version as brew always installs Latest version
 export HIVE_HOME=/usr/local/Cellar/hive/2.3.1/libexec ### or latest version as brew always installs Latest version 
 
