@@ -22,3 +22,9 @@ mysql> CREATE DATABASE metastore;
 mysql> USE metastore;
 mysql> CREATE USER 'hiveuser'@'localhost' IDENTIFIED BY 'password';
 mysql> GRANT SELECT,INSERT,UPDATE,DELETE,ALTER,CREATE, REFERENCES, INDEX ON metastore.* TO 'hiveuser'@'localhost';
+
+
+
+you have created a user called hiveuser so going forward if you want to login as hiveuser then use the following command
+
+mysql -uhiveuser -ppassword
