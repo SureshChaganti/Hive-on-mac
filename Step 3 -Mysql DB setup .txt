@@ -1,6 +1,23 @@
 start My sql with below command:
   brew services start mysql
 $ mysql
+
+if you see below error when trying to run above command 
+---------------------------------------------------------
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
+---------------------------------------------------------
+
+that is due to permission error  
+so change the ownership with below command
+--------------------------------------------
+sudo chown -R _mysql:mysql /usr/local/var/mysql
+
+now start the mysql server with below command 
+---------------------------------------------
+ sudo mysql.server start
+
+then launch the my sql with "mysql" command
+
 mysql> CREATE DATABASE metastore;
 mysql> USE metastore;
 mysql> CREATE USER 'hiveuser'@'localhost' IDENTIFIED BY 'password';
