@@ -16,7 +16,7 @@ now start the mysql server with below command
 ---------------------------------------------
  sudo mysql.server start
 
-then launch the my sql with "mysql" command
+then launch the my sql with "mysql -uroot" command
 
 mysql> CREATE DATABASE metastore;
 mysql> USE metastore;
