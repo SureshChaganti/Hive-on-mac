@@ -34,7 +34,7 @@
     <description>Location of Hive run time structured log file</description>
 </property>
 <property>
-    `<name>hive.metastore.schema.verification</name>`
+    <name>hive.metastore.schema.verification</name>
     <value>false</value>
     <description>Some Description</description>
 </property>
